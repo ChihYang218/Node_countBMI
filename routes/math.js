@@ -22,12 +22,12 @@ router.post('/:num1/:num2/:op', (req, res) => {
   if(op == 1)
   {
     ans = num1+num2;
-    ans = ans.toFixed(4);
+    ans = ans.toFixed(2);
   }
   else if(op == 2)
   {
     ans = num1-num2;
-    ans = ans.toFixed(4);
+    ans = ans.toFixed(2);
   }
   else if(op == 3)
   {
