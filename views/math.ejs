@@ -5,6 +5,7 @@
     <%- include('./partials/lib.ejs'); %>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/math.css">
+    <script defer src="/javascripts/math.js"></script>
   </head>
   <body>
     <%- include('./partials/navbar.ejs'); %>
@@ -26,7 +27,7 @@
           <td>輸入數字2: </td>
           <td>
             <div class="form-outline" style="width: 22rem;">
-              <input step="0.01" value="0.00" type="number" id="number1" class="form-control" />
+              <input step="0.01" value="0.00" type="number" id="number2" class="form-control" />
             </div>
           </td>
         </tr>
@@ -34,16 +35,16 @@
           <td>輸出結果 : </td>
           <td>
             <div class="form-outline" style="width: 22rem;">
-              <input type="text" class="form-control" placeholder="Result">
+              <input type="text" class="form-control" placeholder="Result" id="result">
             </div>
           </td>
         </tr>
       </table>
       <div class="container">
-        <button type="button" class="btn btn-danger">加法</button>
-        <button type="button" class="btn btn-warning">減法</button>
-        <button type="button" class="btn btn-success">乘法</button>
-        <button type="button" class="btn btn-primary">除法</button>
+        <button type="button" class="btn btn-danger" id="btn1">加法</button>
+        <button type="button" class="btn btn-warning" id="btn2">減法</button>
+        <button type="button" class="btn btn-success" id="btn3">乘法</button>
+        <button type="button" class="btn btn-primary" id="btn4">除法</button>
       </div>
     </div>
   </body>
