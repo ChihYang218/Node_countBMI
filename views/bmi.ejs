@@ -5,6 +5,7 @@
     <%- include('./partials/lib.ejs'); %>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/bmi.css">
+    <script defer src="/javascripts/bmi.js"></script>
   </head>
   <body>
     <%- include('./partials/navbar.ejs'); %>
@@ -18,12 +19,12 @@
           <td>選擇男女: </td>
           <td>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="boy" value="option1">
-              <label class="form-check-label" for="boy">男</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="boy" value="vboy">
+              <label class="form-check-label" for="gender">男</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="girl" value="option2">
-              <label class="form-check-label" for="girl">女</label>
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="girl" value="vgirl">
+              <label class="form-check-label" for="gender">女</label>
             </div>
           </td>
         </tr>
@@ -39,7 +40,7 @@
           <td>輸入體重(公斤): </td>
           <td>
             <div class="form-outline" style="width: 22rem;">
-              <input step="0.01" value="45.00" type="number" id="number1" class="form-control" />
+              <input step="0.01" value="45.00" type="number" id="number2" class="form-control" />
             </div>
           </td>
         </tr>
@@ -47,7 +48,7 @@
           <td>BMI 數值: </td>
           <td>
             <div class="form-outline" style="width: 22rem;">
-              <input type="text" class="form-control" placeholder="BMI值">
+              <input type="text" class="form-control" placeholder="BMI值" id="bmi">
             </div>
           </td>
         </tr>
@@ -55,7 +56,7 @@
           <td>評測結果: </td>
           <td>
             <div class="form-outline" style="width: 22rem;">
-              <input type="text" class="form-control" placeholder="等待結果">
+              <input type="text" class="form-control" placeholder="等待結果" id="result">
             </div>
           </td>
         </tr>
