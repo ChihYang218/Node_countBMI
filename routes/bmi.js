@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'BMI服務' });
+  res.render('bmi', { title: 'BMI服務' });
 });
 
 module.exports = router;
