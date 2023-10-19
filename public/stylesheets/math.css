@@ -1,3 +1,8 @@
 tr td {
   padding: 7px;
 }
+
+button {
+  font-size: 20px !important;
+  margin: 20px 7px;
+}
