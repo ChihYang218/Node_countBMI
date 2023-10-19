@@ -2,7 +2,7 @@ tr td {
   padding: 7px;
 }
 
-button {
+#btnBMI {
   background-color:gray !important;
   border-color: gray !important;
   margin: 20px 7px;

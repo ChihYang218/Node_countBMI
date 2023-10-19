@@ -2,21 +2,28 @@
   <div class="container-fluid">
     <!-- navbar title -->
     <a class="navbar-brand" href="#">Node_countBMI專案</a>
-    <!-- Links -->
-    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-      <li class="nav-item">
-        <a class="nav-link" href="/">首頁</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/math">Math運算</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/bmi">BMI服務</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link red_t" href="https://github.com/ChihYang218/Node_countBMI" target="_blank">原始碼</a>
-      </li>
-    </ul>
+    <!-- 動態縮起list -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- 用collapse讓list直接消失 -->
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <!-- Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/math">Math運算</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bmi">BMI服務</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link red_t" href="https://github.com/ChihYang218/Node_countBMI" target="_blank">原始碼</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
 </nav>
