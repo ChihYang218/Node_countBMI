@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <%- include('./partials/lib.ejs'); %>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/bmi.css">
   </head>
   <body>
     <%- include('./partials/navbar.ejs'); %>
@@ -11,6 +12,54 @@
     <div class="container" style="text-align:center;">
       <br>
       <h2><span class="badge rounded-pill bg-primary"><%= title %></span></h2>
+      <br>
+      <table>
+        <tr>
+          <td>選擇男女: </td>
+          <td>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="boy" value="option1">
+              <label class="form-check-label" for="boy">男</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="girl" value="option2">
+              <label class="form-check-label" for="girl">女</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>輸入身高(公尺): </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input step="0.01" value="160.00" type="number" id="number1" class="form-control" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>輸入體重(公斤): </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input step="0.01" value="45.00" type="number" id="number1" class="form-control" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>BMI 數值: </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input type="text" class="form-control" placeholder="BMI值">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>評測結果: </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input type="text" class="form-control" placeholder="等待結果">
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
     
   </body>
