@@ -3,8 +3,15 @@
   <head>
     <title><%= title %></title>
     <%- include('./partials/lib.ejs'); %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
     <%- include('./partials/navbar.ejs'); %>
+
+    <div class="container" style="text-align:center;">
+      <br>
+      <h2><span class="badge rounded-pill bg-primary"><%= title %></span></h2>
+    </div>
+    
   </body>
 </html>
