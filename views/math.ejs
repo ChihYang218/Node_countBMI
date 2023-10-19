@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <%- include('./partials/lib.ejs'); %>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/math.css">
   </head>
   <body>
     <%- include('./partials/navbar.ejs'); %>
@@ -11,7 +12,33 @@
     <div class="container" style="text-align:center;">
       <br>
       <h2><span class="badge rounded-pill bg-primary"><%= title %></span></h2>
+      <br>
+      <table>
+        <tr>
+          <td>輸入數字1: </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input step="0.01" value="0.00" type="number" id="number1" class="form-control" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>輸入數字2: </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input step="0.01" value="0.00" type="number" id="number1" class="form-control" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>輸出結果 : </td>
+          <td>
+            <div class="form-outline" style="width: 22rem;">
+              <input type="text" class="form-control" placeholder="Result">
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
-    
   </body>
 </html>
