@@ -14,5 +14,13 @@ $(function(){
       alert('請輸入身高或體重');
       return;
     }
+
+    $.post(
+      '/bmi/' + gender + '/' + height + '/' + weight,
+      (data) => {
+        $('#bmi').val(data.bmi);
+        $('#result').val(data.result);
+      }
+    )
   })
 })
